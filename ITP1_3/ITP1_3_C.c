@@ -1,22 +1,23 @@
 #include<stdio.h>
 
 int main(){
-  int n1, n2;
+  int a, b;
   int temp;
+  int i;
 
-  while(1){
-    scanf("%d %d", &n1, &n2);
+  for(i = 0; i < 10000; i++){
+    scanf("%d %d", &a, &b);
 
-    if(n1 == 0 && n2 == 0) break;
+    if(a == 0 && b == 0) break;
 
-    if(n1 > n2){
-      temp = n1;
-      n1 = n2;
-      n2 = temp;
+    if(a > b){
+      temp = a;
+      a = b;
+      b = temp;
     }
 
-    printf("%d %d\n", n1, n2);
+    printf("%d %d\n", a , b);
   }
-  
+
   return 0;
 }

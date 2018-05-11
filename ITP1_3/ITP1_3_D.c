@@ -1,18 +1,17 @@
 #include<stdio.h>
 
 int main(){
-  int from, to, target;
+  int a, b, c;
   int i;
-  int cnt = 0;
+  int count = 0;
   
-  scanf("%d %d %d", &from, &to, &target);
+  scanf("%d %d %d", &a, &b, &c);
 
-  for(i = from; i <= to; i++){
-    if(target % i == 0){
-      cnt++;
-    }
+  for(i = a; i <= b; i++){
+    if(c % i == 0) count++;
   }
 
-  printf("%d\n", cnt);
+  printf("%d\n", count);
+  
   return 0;
 }
