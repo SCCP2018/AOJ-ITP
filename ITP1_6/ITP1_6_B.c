@@ -2,7 +2,7 @@
 
 int main(){
   int n;
-  char p;
+  char p, dummy;
   int input;
   int arr[4][13];
   int i, j;
@@ -17,6 +17,7 @@ int main(){
   // array input
   scanf("%d", &n);
   for(i = 0; i < n; i++){
+    scanf("%c", &dummy);
     scanf("%c %d", &p, &input);
     switch(p){
       case 'S':
